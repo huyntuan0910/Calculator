@@ -31,7 +31,7 @@ function handleSymbol(symbol){
             if(buffer.length === 1){
                 buffer = '0';
             }else{
-                buffer = buffer.slice(0, -1);
+                buffer = buffer.substring(0, buffer.length - 1);
             }
             break;
         case '+':
